@@ -1,6 +1,5 @@
 class Order < ApplicationRecord
-
-
+  
   has_many :line_items
 
   monetize :total_cents, numericality: true
