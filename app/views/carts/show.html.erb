@@ -1,5 +1,13 @@
 <section class="cart-show">
 
+  <% if enhanced_cart.empty? %>
+    <h1> Your Cart Is Empty </h1>
+    <div class="warning">
+      Please add an item to your cart before proceeding.
+    </div>
+    <%= link_to 'Back to Products', '/' %>
+  <% else %>
+
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
@@ -45,8 +53,10 @@
           data-email="kvirani@gmail.com"
           data-currency="cad">
         </script>
+      <%= raise enhanced_cart.inspect %>
       <% end %>
     </div>
   </div>
+  <% end %>
 
 </section>
