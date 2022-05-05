@@ -1,9 +1,18 @@
 <h1>Login</h1>
 
 <%= form_tag '/login' do %>
+<div class="card">
+  <div class="card-body">
 
+  <div class="mb-3">
   Email: <%= text_field_tag :email %>
+  </div>
+
+  <div class="mb-3">
   Password: <%= password_field_tag :password %>
+  </div>
   <%= submit_tag "Submit" %>
 
+  </div>
+</div>
 <% end %>
