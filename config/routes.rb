@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   # These routes will be for signup. The first renders a form in the browse, the second will 
   # receive the form and create a user in our database using the data given to us by the user.
+  
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
@@ -14,15 +15,12 @@ Rails.application.routes.draw do
   get 'sessions/create'
   get 'sessions/destroy'
   
-  get 'about/index'
-  get 'static_pages/help'
-  get 'static_pages/faq'
-  get 'static_pages/about'
-    
   root to: 'products#index'
   
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
+  resources :about, only: [:index]
+  
   
   resource :cart, only: [:show] do
     post   :add_item
