@@ -7,7 +7,7 @@
     </h1>
   <% end%>
   <div>
-    <% if product.quantity < 1 %>
+    <% if product.sold_out? %>
       <div class="soldout">Sold Out</div>
       <%= button_to add_item_cart_path(product_id: product.id), :disabled => true, class: 'btn', method: :post do %>
         <%= fa_icon "shopping-cart", text: 'Add' %>
