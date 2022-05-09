@@ -1,5 +1,4 @@
-module Admin
-  class BaseController < ApplicationController
+  class Admin::BaseController < ApplicationController
 
     def http_basic_authenticate
       authenticate_or_request_with_http_basic do |name, password|
@@ -8,4 +7,3 @@ module Admin
     end
     
   end
-end
