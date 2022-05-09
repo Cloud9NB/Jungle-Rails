@@ -1,7 +1,5 @@
 class Admin::CategoriesController < Admin::BaseController
 
-  before_action :http_basic_authenticate
-
   def index
     @categories = Category.all
   end
