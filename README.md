@@ -4,8 +4,19 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 
 ## Screenshots
 
+### <u><strong>Main Page
+!["Screenshot of Main Page"](https://github.com/Cloud9NB/Jungle-Rails/blob/master/docs/home_page_1.png?raw=true)
+!["Screenshot of Main Page"](https://github.com/Cloud9NB/Jungle-Rails/blob/master/docs/home_page_2.png?raw=true)
 
+### Product
+!["Screenshot of Product"](https://github.com/Cloud9NB/Jungle-Rails/blob/master/docs/product.png?raw=true)<strong>
 
+### Cart
+!["Screenshot of Checkout"](https://github.com/Cloud9NB/Jungle-Rails/blob/master/docs/my_cart.png?raw=true)
+
+### <strong>Signup</u></strong>
+!["Screenshot of Checkout"](https://github.com/Cloud9NB/Jungle-Rails/blob/master/docs/sign_up.png?raw=true
+)
 ## Setup
 
 1. Run `bundle install` to install dependencies
@@ -34,3 +45,19 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+- pg
+- puma
+- sass-rails
+- webpackere
+- turbolinks
+- jbuilder
+- jquery-rails
+- sdoc
+- bcrypt
+- bootstrap
+- font-awesome-rails
+- money-rails
+- rmagick
+- faker
+- carrierwave
+- bootsnap
